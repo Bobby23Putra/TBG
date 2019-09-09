@@ -1,0 +1,49 @@
+#!/bin/bash
+cd /home/pi/code
+
+#curr_a, curr_b, curr_c, curr_n, volt_ab, volt_bc, volt_ac, volt_an, volt_bn, volt_cn, freq_
+
+all="2999
+3001
+3003
+3005
+3019
+3021
+3023
+3027
+3029
+3031
+3109"
+
+#memastikan koneksi gsm
+conn=$(/bin/bash connect_gsm.sh)
+alive="is alive"
+
+if echo "$conn" | grep -q "$alive"; then
+    echo "connected";
+else
+    echo "no connection";
+fi
+
+
+#th=`./am2301`
+#data=""
+#while read -r line; do
+#	result=`./pm2120 1 $line 2 /dev/ttyS3 | bc -l | xargs printf "%.2f"`
+#	data=`echo "$data;$result"`
+#done <<< "$all"
+#data=`echo "$data;$th"`
+
+#mqtt
+host="monitoringku.com"
+port=""
+topic=""
+user="iot"
+passwword="iot"
+
+send=`mosquitto_pub -q 1 -h $host -p $port -t $topic -m "$data" -u $user -P $password -i smartUPS -d`
+
+poff -a
+poff -a
+sync
+

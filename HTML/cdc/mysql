@@ -1,0 +1,2 @@
+#!/bin/bash
+mysql -s -N --user="root" --password="root" --database="cdc" --execute="$1"

@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /var/www/cdc
+chat -t 1 -e "" '\pAT' OK AT+COPS? +COPS '\pAT' OK >> /dev/ttyUSB2 < /dev/ttyUSB2 2>/tmp/foo
+grep -m 1 '^+COPS' /tmp/foo

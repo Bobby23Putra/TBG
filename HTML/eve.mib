@@ -1,0 +1,4131 @@
+-- ============================================================================
+-- Description: 
+-- Reference:
+-- Version: V1.0
+-- History:
+-- updated By Dimas Eko, 25 Aug 2016
+-- note: Eve client id = 70 
+-- ============================================================================
+EVE-BATTERY-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+        OBJECT-TYPE, Integer32, NOTIFICATION-TYPE, enterprises
+FROM SNMPv2-SMI
+;
+
+MAGNAR		OBJECT IDENTIFIER ::= {enterprises 38462}
+EVE		OBJECT IDENTIFIER ::= {MAGNAR 70}
+
+pack1 OBJECT IDENTIFIER            ::= { EVE 1 }
+pack2 OBJECT IDENTIFIER            ::= { EVE 2 }
+pack3 OBJECT IDENTIFIER            ::= { EVE 3 }
+pack4 OBJECT IDENTIFIER            ::= { EVE 4 }
+pack5 OBJECT IDENTIFIER            ::= { EVE 5 }
+pack6 OBJECT IDENTIFIER            ::= { EVE 6 }
+pack7 OBJECT IDENTIFIER            ::= { EVE 7 }
+pack8 OBJECT IDENTIFIER            ::= { EVE 8 }
+pack9 OBJECT IDENTIFIER            ::= { EVE 9 }
+pack10 OBJECT IDENTIFIER            ::= { EVE 10 }
+pack11 OBJECT IDENTIFIER            ::= { EVE 11 }
+pack12 OBJECT IDENTIFIER            ::= { EVE 12 }
+pack13 OBJECT IDENTIFIER            ::= { EVE 13 }
+pack14 OBJECT IDENTIFIER            ::= { EVE 14 }
+pack15 OBJECT IDENTIFIER            ::= { EVE 15 }
+
+PACK_01_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 01 Voltage Value."
+	::= {pack1 1}
+
+PACK_01_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 02 Voltage Value."
+	::= {pack1 2}
+
+PACK_01_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 03 Voltage Value."
+	::= {pack1 3}
+	
+PACK_01_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 04 Voltage Value."
+	::= {pack1 4}
+	
+PACK_01_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 05 Voltage Value."
+	::= {pack1 5}
+	
+PACK_01_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 06 Voltage Value."
+	::= {pack1 6}
+	
+PACK_01_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 07 Voltage Value."
+	::= {pack1 7}
+	
+PACK_01_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 08 Voltage Value."
+	::= {pack1 8}
+	
+PACK_01_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 09 Voltage Value."
+	::= {pack1 9}
+	
+PACK_01_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 10 Voltage Value."
+	::= {pack1 10}
+	
+PACK_01_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 11 Voltage Value."
+	::= {pack1 11}
+
+PACK_01_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 12 Voltage Value."
+	::= {pack1 12}
+
+PACK_01_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 13 Voltage Value."
+	::= {pack1 13}
+	
+PACK_01_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 14 Voltage Value."
+	::= {pack1 14}
+	
+PACK_01_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 15 Voltage Value."
+	::= {pack1 15}
+	
+PACK_01_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cell 16 Voltage Value."
+	::= {pack1 16}
+	
+PACK_01_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 01 Value."
+	::= {pack1 17}
+	
+PACK_01_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 02 Value."
+	::= {pack1 18}
+	
+PACK_01_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 03 Value."
+	::= {pack1 19}
+	
+PACK_01_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 04 Value."
+	::= {pack1 20}
+	
+PACK_01_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 05 Value."
+	::= {pack1 21}
+	
+PACK_01_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 06 Value."
+	::= {pack1 22}
+	
+PACK_01_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 07 Value."
+	::= {pack1 23}
+	
+PACK_01_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 08 Value."
+	::= {pack1 24}
+	
+PACK_01_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 09 Value."
+	::= {pack1 25}
+	
+PACK_01_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 10 Value."
+	::= {pack1 26}
+	
+PACK_01_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 11 Value."
+	::= {pack1 27}
+	
+PACK_01_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 12 Value."
+	::= {pack1 28}
+	
+PACK_01_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 13 Value."
+	::= {pack1 29}
+	
+PACK_01_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 14 Value."
+	::= {pack1 30}
+	
+PACK_01_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 15 Value."
+	::= {pack1 31}
+	
+PACK_01_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 16 Value."
+	::= {pack1 32}
+	
+PACK_01_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Temperature 17 Value."
+	::= {pack1 33}
+	
+PACK_01_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Battery Current Value."
+	::= {pack1 34}
+
+PACK_01_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Battery Voltage Value."
+	::= {pack1 35}
+	
+PACK_01_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 State of Charge Value."
+	::= {pack1 36}
+	
+PACK_01_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Full Capacity Value."
+	::= {pack1 37}
+	
+PACK_01_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Cycle Count Value."
+	::= {pack1 38}
+	
+PACK_01_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 01 Design Capacity Value."
+	::= {pack1 39}
+	
+PACK_02_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 01 Voltage Value."
+	::= {pack2 1}
+
+PACK_02_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 02 Voltage Value."
+	::= {pack2 2}
+
+PACK_02_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 03 Voltage Value."
+	::= {pack2 3}
+	
+PACK_02_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 04 Voltage Value."
+	::= {pack2 4}
+	
+PACK_02_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 05 Voltage Value."
+	::= {pack2 5}
+	
+PACK_02_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 06 Voltage Value."
+	::= {pack2 6}
+	
+PACK_02_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 07 Voltage Value."
+	::= {pack2 7}
+	
+PACK_02_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 08 Voltage Value."
+	::= {pack2 8}
+	
+PACK_02_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 09 Voltage Value."
+	::= {pack2 9}
+	
+PACK_02_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 10 Voltage Value."
+	::= {pack2 10}
+	
+PACK_02_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 11 Voltage Value."
+	::= {pack2 11}
+
+PACK_02_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 12 Voltage Value."
+	::= {pack2 12}
+
+PACK_02_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 13 Voltage Value."
+	::= {pack2 13}
+	
+PACK_02_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 14 Voltage Value."
+	::= {pack2 14}
+	
+PACK_02_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 15 Voltage Value."
+	::= {pack2 15}
+	
+PACK_02_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cell 16 Voltage Value."
+	::= {pack2 16}
+	
+PACK_02_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 01 Value."
+	::= {pack2 17}
+	
+PACK_02_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 02 Value."
+	::= {pack2 18}
+	
+PACK_02_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 03 Value."
+	::= {pack2 19}
+	
+PACK_02_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 04 Value."
+	::= {pack2 20}
+	
+PACK_02_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 05 Value."
+	::= {pack2 21}
+	
+PACK_02_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 06 Value."
+	::= {pack2 22}
+	
+PACK_02_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 07 Value."
+	::= {pack2 23}
+	
+PACK_02_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 08 Value."
+	::= {pack2 24}
+	
+PACK_02_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 09 Value."
+	::= {pack2 25}
+	
+PACK_02_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 10 Value."
+	::= {pack2 26}
+	
+PACK_02_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 11 Value."
+	::= {pack2 27}
+	
+PACK_02_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 12 Value."
+	::= {pack2 28}
+	
+PACK_02_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 13 Value."
+	::= {pack2 29}
+	
+PACK_02_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 14 Value."
+	::= {pack2 30}
+	
+PACK_02_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 15 Value."
+	::= {pack2 31}
+	
+PACK_02_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 16 Value."
+	::= {pack2 32}
+	
+PACK_02_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Temperature 17 Value."
+	::= {pack2 33}
+	
+PACK_02_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Battery Current Value."
+	::= {pack2 34}
+
+PACK_02_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Battery Voltage Value."
+	::= {pack2 35}
+	
+PACK_02_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 State of Charge Value."
+	::= {pack2 36}
+	
+PACK_02_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Full Capacity Value."
+	::= {pack2 37}
+	
+PACK_02_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Cycle Count Value."
+	::= {pack2 38}
+	
+PACK_02_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 02 Design Capacity Value."
+	::= {pack2 39}
+	
+PACK_03_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 01 Voltage Value."
+	::= {pack3 1}
+
+PACK_03_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 02 Voltage Value."
+	::= {pack3 2}
+
+PACK_03_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 03 Voltage Value."
+	::= {pack3 3}
+	
+PACK_03_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 04 Voltage Value."
+	::= {pack3 4}
+	
+PACK_03_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 05 Voltage Value."
+	::= {pack3 5}
+	
+PACK_03_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 06 Voltage Value."
+	::= {pack3 6}
+	
+PACK_03_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 07 Voltage Value."
+	::= {pack3 7}
+	
+PACK_03_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 08 Voltage Value."
+	::= {pack3 8}
+	
+PACK_03_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 09 Voltage Value."
+	::= {pack3 9}
+	
+PACK_03_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 10 Voltage Value."
+	::= {pack3 10}
+	
+PACK_03_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 11 Voltage Value."
+	::= {pack3 11}
+
+PACK_03_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 12 Voltage Value."
+	::= {pack3 12}
+
+PACK_03_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 13 Voltage Value."
+	::= {pack3 13}
+	
+PACK_03_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 14 Voltage Value."
+	::= {pack3 14}
+	
+PACK_03_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 15 Voltage Value."
+	::= {pack3 15}
+	
+PACK_03_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cell 16 Voltage Value."
+	::= {pack3 16}
+	
+PACK_03_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 01 Value."
+	::= {pack3 17}
+	
+PACK_03_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 02 Value."
+	::= {pack3 18}
+	
+PACK_03_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 03 Value."
+	::= {pack3 19}
+	
+PACK_03_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 04 Value."
+	::= {pack3 20}
+	
+PACK_03_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 05 Value."
+	::= {pack3 21}
+	
+PACK_03_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 06 Value."
+	::= {pack3 22}
+	
+PACK_03_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 07 Value."
+	::= {pack3 23}
+	
+PACK_03_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 08 Value."
+	::= {pack3 24}
+	
+PACK_03_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 09 Value."
+	::= {pack3 25}
+	
+PACK_03_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 10 Value."
+	::= {pack3 26}
+	
+PACK_03_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 11 Value."
+	::= {pack3 27}
+	
+PACK_03_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 12 Value."
+	::= {pack3 28}
+	
+PACK_03_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 13 Value."
+	::= {pack3 29}
+	
+PACK_03_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 14 Value."
+	::= {pack3 30}
+	
+PACK_03_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 15 Value."
+	::= {pack3 31}
+	
+PACK_03_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 16 Value."
+	::= {pack3 32}
+	
+PACK_03_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Temperature 17 Value."
+	::= {pack3 33}
+	
+PACK_03_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Battery Current Value."
+	::= {pack3 34}
+
+PACK_03_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Battery Voltage Value."
+	::= {pack3 35}
+	
+PACK_03_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 State of Charge Value."
+	::= {pack3 36}
+	
+PACK_03_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Full Capacity Value."
+	::= {pack3 37}
+	
+PACK_03_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Cycle Count Value."
+	::= {pack3 38}
+	
+PACK_03_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 03 Design Capacity Value."
+	::= {pack3 39}
+	
+PACK_04_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 01 Voltage Value."
+	::= {pack4 1}
+
+PACK_04_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 02 Voltage Value."
+	::= {pack4 2}
+
+PACK_04_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 03 Voltage Value."
+	::= {pack4 3}
+	
+PACK_04_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 04 Voltage Value."
+	::= {pack4 4}
+	
+PACK_04_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 05 Voltage Value."
+	::= {pack4 5}
+	
+PACK_04_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 06 Voltage Value."
+	::= {pack4 6}
+	
+PACK_04_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 07 Voltage Value."
+	::= {pack4 7}
+	
+PACK_04_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 08 Voltage Value."
+	::= {pack4 8}
+	
+PACK_04_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 09 Voltage Value."
+	::= {pack4 9}
+	
+PACK_04_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 10 Voltage Value."
+	::= {pack4 10}
+	
+PACK_04_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 11 Voltage Value."
+	::= {pack4 11}
+
+PACK_04_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 12 Voltage Value."
+	::= {pack4 12}
+
+PACK_04_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 13 Voltage Value."
+	::= {pack4 13}
+	
+PACK_04_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 14 Voltage Value."
+	::= {pack4 14}
+	
+PACK_04_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 15 Voltage Value."
+	::= {pack4 15}
+	
+PACK_04_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cell 16 Voltage Value."
+	::= {pack4 16}
+	
+PACK_04_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 01 Value."
+	::= {pack4 17}
+	
+PACK_04_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 02 Value."
+	::= {pack4 18}
+	
+PACK_04_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 03 Value."
+	::= {pack4 19}
+	
+PACK_04_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 04 Value."
+	::= {pack4 20}
+	
+PACK_04_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 05 Value."
+	::= {pack4 21}
+	
+PACK_04_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 06 Value."
+	::= {pack4 22}
+	
+PACK_04_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 07 Value."
+	::= {pack4 23}
+	
+PACK_04_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 08 Value."
+	::= {pack4 24}
+	
+PACK_04_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 09 Value."
+	::= {pack4 25}
+	
+PACK_04_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 10 Value."
+	::= {pack4 26}
+	
+PACK_04_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 11 Value."
+	::= {pack4 27}
+	
+PACK_04_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 12 Value."
+	::= {pack4 28}
+	
+PACK_04_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 13 Value."
+	::= {pack4 29}
+	
+PACK_04_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 14 Value."
+	::= {pack4 30}
+	
+PACK_04_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 15 Value."
+	::= {pack4 31}
+	
+PACK_04_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 16 Value."
+	::= {pack4 32}
+	
+PACK_04_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Temperature 17 Value."
+	::= {pack4 33}
+	
+PACK_04_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Battery Current Value."
+	::= {pack4 34}
+
+PACK_04_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Battery Voltage Value."
+	::= {pack4 35}
+	
+PACK_04_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 State of Charge Value."
+	::= {pack4 36}
+	
+PACK_04_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Full Capacity Value."
+	::= {pack4 37}
+	
+PACK_04_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Cycle Count Value."
+	::= {pack4 38}
+	
+PACK_04_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 04 Design Capacity Value."
+	::= {pack4 39}
+	
+PACK_05_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 01 Voltage Value."
+	::= {pack5 1}
+
+PACK_05_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 02 Voltage Value."
+	::= {pack5 2}
+
+PACK_05_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 03 Voltage Value."
+	::= {pack5 3}
+	
+PACK_05_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 04 Voltage Value."
+	::= {pack5 4}
+	
+PACK_05_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 05 Voltage Value."
+	::= {pack5 5}
+	
+PACK_05_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 06 Voltage Value."
+	::= {pack5 6}
+	
+PACK_05_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 07 Voltage Value."
+	::= {pack5 7}
+	
+PACK_05_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 08 Voltage Value."
+	::= {pack5 8}
+	
+PACK_05_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 09 Voltage Value."
+	::= {pack5 9}
+	
+PACK_05_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 10 Voltage Value."
+	::= {pack5 10}
+	
+PACK_05_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 11 Voltage Value."
+	::= {pack5 11}
+
+PACK_05_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 12 Voltage Value."
+	::= {pack5 12}
+
+PACK_05_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 13 Voltage Value."
+	::= {pack5 13}
+	
+PACK_05_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 14 Voltage Value."
+	::= {pack5 14}
+	
+PACK_05_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 15 Voltage Value."
+	::= {pack5 15}
+	
+PACK_05_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cell 16 Voltage Value."
+	::= {pack5 16}
+	
+PACK_05_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 01 Value."
+	::= {pack5 17}
+	
+PACK_05_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 02 Value."
+	::= {pack5 18}
+	
+PACK_05_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 03 Value."
+	::= {pack5 19}
+	
+PACK_05_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 04 Value."
+	::= {pack5 20}
+	
+PACK_05_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 05 Value."
+	::= {pack5 21}
+	
+PACK_05_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 06 Value."
+	::= {pack5 22}
+	
+PACK_05_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 07 Value."
+	::= {pack5 23}
+	
+PACK_05_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 08 Value."
+	::= {pack5 24}
+	
+PACK_05_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 09 Value."
+	::= {pack5 25}
+	
+PACK_05_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 10 Value."
+	::= {pack5 26}
+	
+PACK_05_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 11 Value."
+	::= {pack5 27}
+	
+PACK_05_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 12 Value."
+	::= {pack5 28}
+	
+PACK_05_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 13 Value."
+	::= {pack5 29}
+	
+PACK_05_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 14 Value."
+	::= {pack5 30}
+	
+PACK_05_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 15 Value."
+	::= {pack5 31}
+	
+PACK_05_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 16 Value."
+	::= {pack5 32}
+	
+PACK_05_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Temperature 17 Value."
+	::= {pack5 33}
+	
+PACK_05_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Battery Current Value."
+	::= {pack5 34}
+
+PACK_05_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Battery Voltage Value."
+	::= {pack5 35}
+	
+PACK_05_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 State of Charge Value."
+	::= {pack5 36}
+	
+PACK_05_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Full Capacity Value."
+	::= {pack5 37}
+	
+PACK_05_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Cycle Count Value."
+	::= {pack5 38}
+	
+PACK_05_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 05 Design Capacity Value."
+	::= {pack5 39}
+	
+PACK_06_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 01 Voltage Value."
+	::= {pack6 1}
+
+PACK_06_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 02 Voltage Value."
+	::= {pack6 2}
+
+PACK_06_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 03 Voltage Value."
+	::= {pack6 3}
+	
+PACK_06_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 04 Voltage Value."
+	::= {pack6 4}
+	
+PACK_06_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 05 Voltage Value."
+	::= {pack6 5}
+	
+PACK_06_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 06 Voltage Value."
+	::= {pack6 6}
+	
+PACK_06_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 07 Voltage Value."
+	::= {pack6 7}
+	
+PACK_06_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 08 Voltage Value."
+	::= {pack6 8}
+	
+PACK_06_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 09 Voltage Value."
+	::= {pack6 9}
+	
+PACK_06_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 10 Voltage Value."
+	::= {pack6 10}
+	
+PACK_06_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 11 Voltage Value."
+	::= {pack6 11}
+
+PACK_06_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 12 Voltage Value."
+	::= {pack6 12}
+
+PACK_06_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 13 Voltage Value."
+	::= {pack6 13}
+	
+PACK_06_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 14 Voltage Value."
+	::= {pack6 14}
+	
+PACK_06_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 15 Voltage Value."
+	::= {pack6 15}
+	
+PACK_06_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cell 16 Voltage Value."
+	::= {pack6 16}
+	
+PACK_06_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 01 Value."
+	::= {pack6 17}
+	
+PACK_06_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 02 Value."
+	::= {pack6 18}
+	
+PACK_06_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 03 Value."
+	::= {pack6 19}
+	
+PACK_06_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 04 Value."
+	::= {pack6 20}
+	
+PACK_06_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 05 Value."
+	::= {pack6 21}
+	
+PACK_06_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 06 Value."
+	::= {pack6 22}
+	
+PACK_06_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 07 Value."
+	::= {pack6 23}
+	
+PACK_06_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 08 Value."
+	::= {pack6 24}
+	
+PACK_06_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 09 Value."
+	::= {pack6 25}
+	
+PACK_06_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 10 Value."
+	::= {pack6 26}
+	
+PACK_06_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 11 Value."
+	::= {pack6 27}
+	
+PACK_06_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 12 Value."
+	::= {pack6 28}
+	
+PACK_06_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 13 Value."
+	::= {pack6 29}
+	
+PACK_06_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 14 Value."
+	::= {pack6 30}
+	
+PACK_06_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 15 Value."
+	::= {pack6 31}
+	
+PACK_06_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 16 Value."
+	::= {pack6 32}
+	
+PACK_06_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Temperature 17 Value."
+	::= {pack6 33}
+	
+PACK_06_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Battery Current Value."
+	::= {pack6 34}
+
+PACK_06_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Battery Voltage Value."
+	::= {pack6 35}
+	
+PACK_06_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 State of Charge Value."
+	::= {pack6 36}
+	
+PACK_06_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Full Capacity Value."
+	::= {pack6 37}
+	
+PACK_06_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Cycle Count Value."
+	::= {pack6 38}
+	
+PACK_06_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 06 Design Capacity Value."
+	::= {pack6 39}
+	
+PACK_07_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 01 Voltage Value."
+	::= {pack7 1}
+
+PACK_07_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 02 Voltage Value."
+	::= {pack7 2}
+
+PACK_07_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 03 Voltage Value."
+	::= {pack7 3}
+	
+PACK_07_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 04 Voltage Value."
+	::= {pack7 4}
+	
+PACK_07_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 05 Voltage Value."
+	::= {pack7 5}
+	
+PACK_07_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 06 Voltage Value."
+	::= {pack7 6}
+	
+PACK_07_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 07 Voltage Value."
+	::= {pack7 7}
+	
+PACK_07_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 08 Voltage Value."
+	::= {pack7 8}
+	
+PACK_07_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 09 Voltage Value."
+	::= {pack7 9}
+	
+PACK_07_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 10 Voltage Value."
+	::= {pack7 10}
+	
+PACK_07_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 11 Voltage Value."
+	::= {pack7 11}
+
+PACK_07_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 12 Voltage Value."
+	::= {pack7 12}
+
+PACK_07_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 13 Voltage Value."
+	::= {pack7 13}
+	
+PACK_07_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 14 Voltage Value."
+	::= {pack7 14}
+	
+PACK_07_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 15 Voltage Value."
+	::= {pack7 15}
+	
+PACK_07_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cell 16 Voltage Value."
+	::= {pack7 16}
+	
+PACK_07_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 01 Value."
+	::= {pack7 17}
+	
+PACK_07_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 02 Value."
+	::= {pack7 18}
+	
+PACK_07_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 03 Value."
+	::= {pack7 19}
+	
+PACK_07_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 04 Value."
+	::= {pack7 20}
+	
+PACK_07_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 05 Value."
+	::= {pack7 21}
+	
+PACK_07_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 06 Value."
+	::= {pack7 22}
+	
+PACK_07_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 07 Value."
+	::= {pack7 23}
+	
+PACK_07_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 08 Value."
+	::= {pack7 24}
+	
+PACK_07_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 09 Value."
+	::= {pack7 25}
+	
+PACK_07_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 10 Value."
+	::= {pack7 26}
+	
+PACK_07_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 11 Value."
+	::= {pack7 27}
+	
+PACK_07_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 12 Value."
+	::= {pack7 28}
+	
+PACK_07_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 13 Value."
+	::= {pack7 29}
+	
+PACK_07_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 14 Value."
+	::= {pack7 30}
+	
+PACK_07_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 15 Value."
+	::= {pack7 31}
+	
+PACK_07_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 16 Value."
+	::= {pack7 32}
+	
+PACK_07_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Temperature 17 Value."
+	::= {pack7 33}
+	
+PACK_07_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Battery Current Value."
+	::= {pack7 34}
+
+PACK_07_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Battery Voltage Value."
+	::= {pack7 35}
+	
+PACK_07_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 State of Charge Value."
+	::= {pack7 36}
+	
+PACK_07_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Full Capacity Value."
+	::= {pack7 37}
+	
+PACK_07_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Cycle Count Value."
+	::= {pack7 38}
+	
+PACK_07_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 07 Design Capacity Value."
+	::= {pack7 39}
+	
+PACK_08_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 01 Voltage Value."
+	::= {pack8 1}
+
+PACK_08_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 02 Voltage Value."
+	::= {pack8 2}
+
+PACK_08_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 03 Voltage Value."
+	::= {pack8 3}
+	
+PACK_08_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 04 Voltage Value."
+	::= {pack8 4}
+	
+PACK_08_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 05 Voltage Value."
+	::= {pack8 5}
+	
+PACK_08_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 06 Voltage Value."
+	::= {pack8 6}
+	
+PACK_08_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 07 Voltage Value."
+	::= {pack8 7}
+	
+PACK_08_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 08 Voltage Value."
+	::= {pack8 8}
+	
+PACK_08_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 09 Voltage Value."
+	::= {pack8 9}
+	
+PACK_08_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 10 Voltage Value."
+	::= {pack8 10}
+	
+PACK_08_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 11 Voltage Value."
+	::= {pack8 11}
+
+PACK_08_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 12 Voltage Value."
+	::= {pack8 12}
+
+PACK_08_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 13 Voltage Value."
+	::= {pack8 13}
+	
+PACK_08_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 14 Voltage Value."
+	::= {pack8 14}
+	
+PACK_08_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 15 Voltage Value."
+	::= {pack8 15}
+	
+PACK_08_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cell 16 Voltage Value."
+	::= {pack8 16}
+	
+PACK_08_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 01 Value."
+	::= {pack8 17}
+	
+PACK_08_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 02 Value."
+	::= {pack8 18}
+	
+PACK_08_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 03 Value."
+	::= {pack8 19}
+	
+PACK_08_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 04 Value."
+	::= {pack8 20}
+	
+PACK_08_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 05 Value."
+	::= {pack8 21}
+	
+PACK_08_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 06 Value."
+	::= {pack8 22}
+	
+PACK_08_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 07 Value."
+	::= {pack8 23}
+	
+PACK_08_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 08 Value."
+	::= {pack8 24}
+	
+PACK_08_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 09 Value."
+	::= {pack8 25}
+	
+PACK_08_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 10 Value."
+	::= {pack8 26}
+	
+PACK_08_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 11 Value."
+	::= {pack8 27}
+	
+PACK_08_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 12 Value."
+	::= {pack8 28}
+	
+PACK_08_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 13 Value."
+	::= {pack8 29}
+	
+PACK_08_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 14 Value."
+	::= {pack8 30}
+	
+PACK_08_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 15 Value."
+	::= {pack8 31}
+	
+PACK_08_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 16 Value."
+	::= {pack8 32}
+	
+PACK_08_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Temperature 17 Value."
+	::= {pack8 33}
+	
+PACK_08_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Battery Current Value."
+	::= {pack8 34}
+
+PACK_08_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Battery Voltage Value."
+	::= {pack8 35}
+	
+PACK_08_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 State of Charge Value."
+	::= {pack8 36}
+	
+PACK_08_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Full Capacity Value."
+	::= {pack8 37}
+	
+PACK_08_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Cycle Count Value."
+	::= {pack8 38}
+	
+PACK_08_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 08 Design Capacity Value."
+	::= {pack8 39}
+	
+PACK_09_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 01 Voltage Value."
+	::= {pack9 1}
+
+PACK_09_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 02 Voltage Value."
+	::= {pack9 2}
+
+PACK_09_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 03 Voltage Value."
+	::= {pack9 3}
+	
+PACK_09_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 04 Voltage Value."
+	::= {pack9 4}
+	
+PACK_09_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 05 Voltage Value."
+	::= {pack9 5}
+	
+PACK_09_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 06 Voltage Value."
+	::= {pack9 6}
+	
+PACK_09_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 07 Voltage Value."
+	::= {pack9 7}
+	
+PACK_09_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 08 Voltage Value."
+	::= {pack9 8}
+	
+PACK_09_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 09 Voltage Value."
+	::= {pack9 9}
+	
+PACK_09_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 10 Voltage Value."
+	::= {pack9 10}
+	
+PACK_09_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 11 Voltage Value."
+	::= {pack9 11}
+
+PACK_09_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 12 Voltage Value."
+	::= {pack9 12}
+
+PACK_09_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 13 Voltage Value."
+	::= {pack9 13}
+	
+PACK_09_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 14 Voltage Value."
+	::= {pack9 14}
+	
+PACK_09_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 15 Voltage Value."
+	::= {pack9 15}
+	
+PACK_09_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cell 16 Voltage Value."
+	::= {pack9 16}
+	
+PACK_09_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 01 Value."
+	::= {pack9 17}
+	
+PACK_09_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 02 Value."
+	::= {pack9 18}
+	
+PACK_09_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 03 Value."
+	::= {pack9 19}
+	
+PACK_09_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 04 Value."
+	::= {pack9 20}
+	
+PACK_09_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 05 Value."
+	::= {pack9 21}
+	
+PACK_09_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 06 Value."
+	::= {pack9 22}
+	
+PACK_09_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 07 Value."
+	::= {pack9 23}
+	
+PACK_09_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 08 Value."
+	::= {pack9 24}
+	
+PACK_09_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 09 Value."
+	::= {pack9 25}
+	
+PACK_09_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 10 Value."
+	::= {pack9 26}
+	
+PACK_09_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 11 Value."
+	::= {pack9 27}
+	
+PACK_09_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 12 Value."
+	::= {pack9 28}
+	
+PACK_09_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 13 Value."
+	::= {pack9 29}
+	
+PACK_09_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 14 Value."
+	::= {pack9 30}
+	
+PACK_09_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 15 Value."
+	::= {pack9 31}
+	
+PACK_09_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 16 Value."
+	::= {pack9 32}
+	
+PACK_09_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Temperature 17 Value."
+	::= {pack9 33}
+	
+PACK_09_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Battery Current Value."
+	::= {pack9 34}
+
+PACK_09_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Battery Voltage Value."
+	::= {pack9 35}
+	
+PACK_09_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 State of Charge Value."
+	::= {pack9 36}
+	
+PACK_09_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Full Capacity Value."
+	::= {pack9 37}
+	
+PACK_09_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Cycle Count Value."
+	::= {pack9 38}
+	
+PACK_09_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 09 Design Capacity Value."
+	::= {pack9 39}
+	
+PACK_10_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 01 Voltage Value."
+	::= {pack10 1}
+
+PACK_10_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 02 Voltage Value."
+	::= {pack10 2}
+
+PACK_10_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 03 Voltage Value."
+	::= {pack10 3}
+	
+PACK_10_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 04 Voltage Value."
+	::= {pack10 4}
+	
+PACK_10_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 05 Voltage Value."
+	::= {pack10 5}
+	
+PACK_10_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 06 Voltage Value."
+	::= {pack10 6}
+	
+PACK_10_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 07 Voltage Value."
+	::= {pack10 7}
+	
+PACK_10_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 08 Voltage Value."
+	::= {pack10 8}
+	
+PACK_10_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 09 Voltage Value."
+	::= {pack10 9}
+	
+PACK_10_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 10 Voltage Value."
+	::= {pack10 10}
+	
+PACK_10_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 11 Voltage Value."
+	::= {pack10 11}
+
+PACK_10_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 12 Voltage Value."
+	::= {pack10 12}
+
+PACK_10_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 13 Voltage Value."
+	::= {pack10 13}
+	
+PACK_10_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 14 Voltage Value."
+	::= {pack10 14}
+	
+PACK_10_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 15 Voltage Value."
+	::= {pack10 15}
+	
+PACK_10_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cell 16 Voltage Value."
+	::= {pack10 16}
+	
+PACK_10_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 01 Value."
+	::= {pack10 17}
+	
+PACK_10_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 02 Value."
+	::= {pack10 18}
+	
+PACK_10_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 03 Value."
+	::= {pack10 19}
+	
+PACK_10_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 04 Value."
+	::= {pack10 20}
+	
+PACK_10_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 05 Value."
+	::= {pack10 21}
+	
+PACK_10_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 06 Value."
+	::= {pack10 22}
+	
+PACK_10_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 07 Value."
+	::= {pack10 23}
+	
+PACK_10_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 08 Value."
+	::= {pack10 24}
+	
+PACK_10_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 09 Value."
+	::= {pack10 25}
+	
+PACK_10_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 10 Value."
+	::= {pack10 26}
+	
+PACK_10_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 11 Value."
+	::= {pack10 27}
+	
+PACK_10_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 12 Value."
+	::= {pack10 28}
+	
+PACK_10_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 13 Value."
+	::= {pack10 29}
+	
+PACK_10_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 14 Value."
+	::= {pack10 30}
+	
+PACK_10_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 15 Value."
+	::= {pack10 31}
+	
+PACK_10_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 16 Value."
+	::= {pack10 32}
+	
+PACK_10_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Temperature 17 Value."
+	::= {pack10 33}
+	
+PACK_10_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Battery Current Value."
+	::= {pack10 34}
+
+PACK_10_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Battery Voltage Value."
+	::= {pack10 35}
+	
+PACK_10_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 State of Charge Value."
+	::= {pack10 36}
+	
+PACK_10_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Full Capacity Value."
+	::= {pack10 37}
+	
+PACK_10_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Cycle Count Value."
+	::= {pack10 38}
+	
+PACK_10_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 10 Design Capacity Value."
+	::= {pack10 39}
+	
+PACK_11_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 01 Voltage Value."
+	::= {pack11 1}
+
+PACK_11_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 02 Voltage Value."
+	::= {pack11 2}
+
+PACK_11_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 03 Voltage Value."
+	::= {pack11 3}
+	
+PACK_11_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 04 Voltage Value."
+	::= {pack11 4}
+	
+PACK_11_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 05 Voltage Value."
+	::= {pack11 5}
+	
+PACK_11_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 06 Voltage Value."
+	::= {pack11 6}
+	
+PACK_11_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 07 Voltage Value."
+	::= {pack11 7}
+	
+PACK_11_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 08 Voltage Value."
+	::= {pack11 8}
+	
+PACK_11_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 09 Voltage Value."
+	::= {pack11 9}
+	
+PACK_11_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 10 Voltage Value."
+	::= {pack11 10}
+	
+PACK_11_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 11 Voltage Value."
+	::= {pack11 11}
+
+PACK_11_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 12 Voltage Value."
+	::= {pack11 12}
+
+PACK_11_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 13 Voltage Value."
+	::= {pack11 13}
+	
+PACK_11_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 14 Voltage Value."
+	::= {pack11 14}
+	
+PACK_11_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 15 Voltage Value."
+	::= {pack11 15}
+	
+PACK_11_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cell 16 Voltage Value."
+	::= {pack11 16}
+	
+PACK_11_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 01 Value."
+	::= {pack11 17}
+	
+PACK_11_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 02 Value."
+	::= {pack11 18}
+	
+PACK_11_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 03 Value."
+	::= {pack11 19}
+	
+PACK_11_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 04 Value."
+	::= {pack11 20}
+	
+PACK_11_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 05 Value."
+	::= {pack11 21}
+	
+PACK_11_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 06 Value."
+	::= {pack11 22}
+	
+PACK_11_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 07 Value."
+	::= {pack11 23}
+	
+PACK_11_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 08 Value."
+	::= {pack11 24}
+	
+PACK_11_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 09 Value."
+	::= {pack11 25}
+	
+PACK_11_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 10 Value."
+	::= {pack11 26}
+	
+PACK_11_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 11 Value."
+	::= {pack11 27}
+	
+PACK_11_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 12 Value."
+	::= {pack11 28}
+	
+PACK_11_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 13 Value."
+	::= {pack11 29}
+	
+PACK_11_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 14 Value."
+	::= {pack11 30}
+	
+PACK_11_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 15 Value."
+	::= {pack11 31}
+	
+PACK_11_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 16 Value."
+	::= {pack11 32}
+	
+PACK_11_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Temperature 17 Value."
+	::= {pack11 33}
+	
+PACK_11_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Battery Current Value."
+	::= {pack11 34}
+
+PACK_11_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Battery Voltage Value."
+	::= {pack11 35}
+	
+PACK_11_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 State of Charge Value."
+	::= {pack11 36}
+	
+PACK_11_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Full Capacity Value."
+	::= {pack11 37}
+	
+PACK_11_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Cycle Count Value."
+	::= {pack11 38}
+	
+PACK_11_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 11 Design Capacity Value."
+	::= {pack11 39}
+	
+PACK_12_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 01 Voltage Value."
+	::= {pack12 1}
+
+PACK_12_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 02 Voltage Value."
+	::= {pack12 2}
+
+PACK_12_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 03 Voltage Value."
+	::= {pack12 3}
+	
+PACK_12_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 04 Voltage Value."
+	::= {pack12 4}
+	
+PACK_12_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 05 Voltage Value."
+	::= {pack12 5}
+	
+PACK_12_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 06 Voltage Value."
+	::= {pack12 6}
+	
+PACK_12_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 07 Voltage Value."
+	::= {pack12 7}
+	
+PACK_12_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 08 Voltage Value."
+	::= {pack12 8}
+	
+PACK_12_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 09 Voltage Value."
+	::= {pack12 9}
+	
+PACK_12_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 10 Voltage Value."
+	::= {pack12 10}
+	
+PACK_12_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 11 Voltage Value."
+	::= {pack12 11}
+
+PACK_12_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 12 Voltage Value."
+	::= {pack12 12}
+
+PACK_12_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 13 Voltage Value."
+	::= {pack12 13}
+	
+PACK_12_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 14 Voltage Value."
+	::= {pack12 14}
+	
+PACK_12_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 15 Voltage Value."
+	::= {pack12 15}
+	
+PACK_12_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cell 16 Voltage Value."
+	::= {pack12 16}
+	
+PACK_12_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 01 Value."
+	::= {pack12 17}
+	
+PACK_12_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 02 Value."
+	::= {pack12 18}
+	
+PACK_12_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 03 Value."
+	::= {pack12 19}
+	
+PACK_12_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 04 Value."
+	::= {pack12 20}
+	
+PACK_12_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 05 Value."
+	::= {pack12 21}
+	
+PACK_12_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 06 Value."
+	::= {pack12 22}
+	
+PACK_12_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 07 Value."
+	::= {pack12 23}
+	
+PACK_12_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 08 Value."
+	::= {pack12 24}
+	
+PACK_12_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 09 Value."
+	::= {pack12 25}
+	
+PACK_12_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 10 Value."
+	::= {pack12 26}
+	
+PACK_12_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 11 Value."
+	::= {pack12 27}
+	
+PACK_12_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 12 Value."
+	::= {pack12 28}
+	
+PACK_12_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 13 Value."
+	::= {pack12 29}
+	
+PACK_12_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 14 Value."
+	::= {pack12 30}
+	
+PACK_12_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 15 Value."
+	::= {pack12 31}
+	
+PACK_12_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 16 Value."
+	::= {pack12 32}
+	
+PACK_12_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Temperature 17 Value."
+	::= {pack12 33}
+	
+PACK_12_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Battery Current Value."
+	::= {pack12 34}
+
+PACK_12_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Battery Voltage Value."
+	::= {pack12 35}
+	
+PACK_12_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 State of Charge Value."
+	::= {pack12 36}
+	
+PACK_12_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Full Capacity Value."
+	::= {pack12 37}
+	
+PACK_12_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Cycle Count Value."
+	::= {pack12 38}
+	
+PACK_12_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 12 Design Capacity Value."
+	::= {pack12 39}
+	
+PACK_13_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 01 Voltage Value."
+	::= {pack13 1}
+
+PACK_13_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 02 Voltage Value."
+	::= {pack13 2}
+
+PACK_13_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 03 Voltage Value."
+	::= {pack13 3}
+	
+PACK_13_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 04 Voltage Value."
+	::= {pack13 4}
+	
+PACK_13_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 05 Voltage Value."
+	::= {pack13 5}
+	
+PACK_13_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 06 Voltage Value."
+	::= {pack13 6}
+	
+PACK_13_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 07 Voltage Value."
+	::= {pack13 7}
+	
+PACK_13_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 08 Voltage Value."
+	::= {pack13 8}
+	
+PACK_13_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 09 Voltage Value."
+	::= {pack13 9}
+	
+PACK_13_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 10 Voltage Value."
+	::= {pack13 10}
+	
+PACK_13_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 11 Voltage Value."
+	::= {pack13 11}
+
+PACK_13_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 12 Voltage Value."
+	::= {pack13 12}
+
+PACK_13_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 13 Voltage Value."
+	::= {pack13 13}
+	
+PACK_13_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 14 Voltage Value."
+	::= {pack13 14}
+	
+PACK_13_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 15 Voltage Value."
+	::= {pack13 15}
+	
+PACK_13_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cell 16 Voltage Value."
+	::= {pack13 16}
+	
+PACK_13_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 01 Value."
+	::= {pack13 17}
+	
+PACK_13_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 02 Value."
+	::= {pack13 18}
+	
+PACK_13_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 03 Value."
+	::= {pack13 19}
+	
+PACK_13_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 04 Value."
+	::= {pack13 20}
+	
+PACK_13_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 05 Value."
+	::= {pack13 21}
+	
+PACK_13_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 06 Value."
+	::= {pack13 22}
+	
+PACK_13_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 07 Value."
+	::= {pack13 23}
+	
+PACK_13_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 08 Value."
+	::= {pack13 24}
+	
+PACK_13_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 09 Value."
+	::= {pack13 25}
+	
+PACK_13_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 10 Value."
+	::= {pack13 26}
+	
+PACK_13_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 11 Value."
+	::= {pack13 27}
+	
+PACK_13_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 12 Value."
+	::= {pack13 28}
+	
+PACK_13_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 13 Value."
+	::= {pack13 29}
+	
+PACK_13_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 14 Value."
+	::= {pack13 30}
+	
+PACK_13_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 15 Value."
+	::= {pack13 31}
+	
+PACK_13_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 16 Value."
+	::= {pack13 32}
+	
+PACK_13_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Temperature 17 Value."
+	::= {pack13 33}
+	
+PACK_13_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Battery Current Value."
+	::= {pack13 34}
+
+PACK_13_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Battery Voltage Value."
+	::= {pack13 35}
+	
+PACK_13_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 State of Charge Value."
+	::= {pack13 36}
+	
+PACK_13_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Full Capacity Value."
+	::= {pack13 37}
+	
+PACK_13_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Cycle Count Value."
+	::= {pack13 38}
+	
+PACK_13_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 13 Design Capacity Value."
+	::= {pack13 39}
+	
+PACK_14_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 01 Voltage Value."
+	::= {pack14 1}
+
+PACK_14_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 02 Voltage Value."
+	::= {pack14 2}
+
+PACK_14_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 03 Voltage Value."
+	::= {pack14 3}
+	
+PACK_14_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 04 Voltage Value."
+	::= {pack14 4}
+	
+PACK_14_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 05 Voltage Value."
+	::= {pack14 5}
+	
+PACK_14_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 06 Voltage Value."
+	::= {pack14 6}
+	
+PACK_14_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 07 Voltage Value."
+	::= {pack14 7}
+	
+PACK_14_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 08 Voltage Value."
+	::= {pack14 8}
+	
+PACK_14_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 09 Voltage Value."
+	::= {pack14 9}
+	
+PACK_14_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 10 Voltage Value."
+	::= {pack14 10}
+	
+PACK_14_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 11 Voltage Value."
+	::= {pack14 11}
+
+PACK_14_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 12 Voltage Value."
+	::= {pack14 12}
+
+PACK_14_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 13 Voltage Value."
+	::= {pack14 13}
+	
+PACK_14_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 14 Voltage Value."
+	::= {pack14 14}
+	
+PACK_14_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 15 Voltage Value."
+	::= {pack14 15}
+	
+PACK_14_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cell 16 Voltage Value."
+	::= {pack14 16}
+	
+PACK_14_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 01 Value."
+	::= {pack14 17}
+	
+PACK_14_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 02 Value."
+	::= {pack14 18}
+	
+PACK_14_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 03 Value."
+	::= {pack14 19}
+	
+PACK_14_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 04 Value."
+	::= {pack14 20}
+	
+PACK_14_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 05 Value."
+	::= {pack14 21}
+	
+PACK_14_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 06 Value."
+	::= {pack14 22}
+	
+PACK_14_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 07 Value."
+	::= {pack14 23}
+	
+PACK_14_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 08 Value."
+	::= {pack14 24}
+	
+PACK_14_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 09 Value."
+	::= {pack14 25}
+	
+PACK_14_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 10 Value."
+	::= {pack14 26}
+	
+PACK_14_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 11 Value."
+	::= {pack14 27}
+	
+PACK_14_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 12 Value."
+	::= {pack14 28}
+	
+PACK_14_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 13 Value."
+	::= {pack14 29}
+	
+PACK_14_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 14 Value."
+	::= {pack14 30}
+	
+PACK_14_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 15 Value."
+	::= {pack14 31}
+	
+PACK_14_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 16 Value."
+	::= {pack14 32}
+	
+PACK_14_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Temperature 17 Value."
+	::= {pack14 33}
+	
+PACK_14_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Battery Current Value."
+	::= {pack14 34}
+
+PACK_14_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Battery Voltage Value."
+	::= {pack14 35}
+	
+PACK_14_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 State of Charge Value."
+	::= {pack14 36}
+	
+PACK_14_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Full Capacity Value."
+	::= {pack14 37}
+	
+PACK_14_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Cycle Count Value."
+	::= {pack14 38}
+	
+PACK_14_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 14 Design Capacity Value."
+	::= {pack14 39}
+	
+PACK_15_CELL_V_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 01 Voltage Value."
+	::= {pack15 1}
+
+PACK_15_CELL_V_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 02 Voltage Value."
+	::= {pack15 2}
+
+PACK_15_CELL_V_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 03 Voltage Value."
+	::= {pack15 3}
+	
+PACK_15_CELL_V_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 04 Voltage Value."
+	::= {pack15 4}
+	
+PACK_15_CELL_V_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 05 Voltage Value."
+	::= {pack15 5}
+	
+PACK_15_CELL_V_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 06 Voltage Value."
+	::= {pack15 6}
+	
+PACK_15_CELL_V_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 07 Voltage Value."
+	::= {pack15 7}
+	
+PACK_15_CELL_V_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 08 Voltage Value."
+	::= {pack15 8}
+	
+PACK_15_CELL_V_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 09 Voltage Value."
+	::= {pack15 9}
+	
+PACK_15_CELL_V_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 10 Voltage Value."
+	::= {pack15 10}
+	
+PACK_15_CELL_V_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 11 Voltage Value."
+	::= {pack15 11}
+
+PACK_15_CELL_V_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 12 Voltage Value."
+	::= {pack15 12}
+
+PACK_15_CELL_V_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 13 Voltage Value."
+	::= {pack15 13}
+	
+PACK_15_CELL_V_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 14 Voltage Value."
+	::= {pack15 14}
+	
+PACK_15_CELL_V_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 15 Voltage Value."
+	::= {pack15 15}
+	
+PACK_15_CELL_V_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cell 16 Voltage Value."
+	::= {pack15 16}
+	
+PACK_15_TEMP_01 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 01 Value."
+	::= {pack15 17}
+	
+PACK_15_TEMP_02 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 02 Value."
+	::= {pack15 18}
+	
+PACK_15_TEMP_03 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 03 Value."
+	::= {pack15 19}
+	
+PACK_15_TEMP_04 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 04 Value."
+	::= {pack15 20}
+	
+PACK_15_TEMP_05 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 05 Value."
+	::= {pack15 21}
+	
+PACK_15_TEMP_06 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 06 Value."
+	::= {pack15 22}
+	
+PACK_15_TEMP_07 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 07 Value."
+	::= {pack15 23}
+	
+PACK_15_TEMP_08 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 08 Value."
+	::= {pack15 24}
+	
+PACK_15_TEMP_09 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 09 Value."
+	::= {pack15 25}
+	
+PACK_15_TEMP_10 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 10 Value."
+	::= {pack15 26}
+	
+PACK_15_TEMP_11 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 11 Value."
+	::= {pack15 27}
+	
+PACK_15_TEMP_12 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 12 Value."
+	::= {pack15 28}
+	
+PACK_15_TEMP_13 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 13 Value."
+	::= {pack15 29}
+	
+PACK_15_TEMP_14 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 14 Value."
+	::= {pack15 30}
+	
+PACK_15_TEMP_15 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 15 Value."
+	::= {pack15 31}
+	
+PACK_15_TEMP_16 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 16 Value."
+	::= {pack15 32}
+	
+PACK_15_TEMP_17 OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Temperature 17 Value."
+	::= {pack15 33}
+	
+PACK_15_BATTERY_CURRENT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Battery Current Value."
+	::= {pack15 34}
+
+PACK_15_BATTERY_VOLTAGE OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Battery Voltage Value."
+	::= {pack15 35}
+	
+PACK_15_SOC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 State of Charge Value."
+	::= {pack15 36}
+	
+PACK_15_FULL_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Full Capacity Value."
+	::= {pack15 37}
+	
+PACK_15_CYCLE_COUNT OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Cycle Count Value."
+	::= {pack15 38}
+	
+PACK_15_DESIGN_CAPC OBJECT-TYPE
+	SYNTAX OCTET STRING
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION "Pack 15 Design Capacity Value."
+	::= {pack15 39}
+
+
+END
