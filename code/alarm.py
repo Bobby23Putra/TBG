@@ -8,7 +8,7 @@ import os
 #def crc(str):
 #       x=0x2D1
 #       val = (0xffff - (x % 0x10000)) + 1
-#       return hex(val)[2:]
+#       return hex(val)[2:
 
 
 if os.path.exists(sys.argv[1]) :
