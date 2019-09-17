@@ -3,6 +3,7 @@ import os
 import shutil
 import sys
 import hashlib
+import time
 from zipfile import ZipFile
 
 def md5Checksum(filePath):
@@ -22,7 +23,9 @@ def downloadFile(url):
         with open("/home/pi/"+path, 'wb') as f:
             for chunk in r:
                 f.write(chunk)
-
+        time.sleep
+        os.system("sudo mount -o remount,rw / ")
+    os.system("sudo mount -o remount,rw / ")
 
 #urlFirmware = "http://bg.dev.miota.io/download/code.zip"
 #urlMd5 = "http://bg.dev.miota.io/download/md5.txt"
@@ -33,8 +36,13 @@ urlVersion = str(sys.argv[3])
 fileFirmwareWeb = urlFirmware.split('/')[-1].split('.')[0]
 fileVersionWeb = urlVersion.split('/')[-1].split('.')[0]
 version = open("/home/pi/version.txt","r").read().strip()
-
+os.system("rw").
 if not (os.path.exists("/home/pi/code")):
+    subprocess.Popen('sudo -S' , shell=True,stdout=subprocess.PIPE)
+    subprocess.Popen("adil123" , shell=True,stdout=subprocess.PIPE)
+    subprocess.Popen("rw" , shell=True,stdout=subprocess.PIPE)
+        subprocess.Popen("rw" , shell=True,stdout=subprocess.PIPE)
+    os.system("rw")
     downloadFile(urlMd5)
     print("Download Md5 Success")
     md5 = open("/home/pi/md5.txt","r").read().strip()
@@ -50,7 +58,9 @@ if not (os.path.exists("/home/pi/code")):
         version.write(fileVersionWeb)
         print("Version Update")
         print("Delete Zip")
+        os.system("rw")
         os.remove("/home/pi/"+fileFirmwareWeb+".zip")
+    os.system("sudo reboot")
     else:
         print("Data Corrupt")
         print("Delete Zip")

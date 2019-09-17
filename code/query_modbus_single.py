@@ -9,10 +9,10 @@ from pymodbus.payload import BinaryPayloadDecoder
 import json
 from collections import OrderedDict
 #OrderedDict((word, True) for word in words)
-import logging
-logging.basicConfig()
-log = logging.getLogger()
-log.setLevel(logging.DEBUG)
+#import logging
+#logging.basicConfig()
+#log = logging.getLogger()
+#log.setLevel(logging.DEBUG)
 
 #count= the number of registers to read
 #unit= the slave unit this request is targeting
@@ -23,10 +23,10 @@ log.setLevel(logging.DEBUG)
 if len(sys.argv) < 4 :
 	print("Argument : [slave addr] [register addr] [length]")
 	exit()
-final = OrderedDict()
+#final = OrderedDict()
 #final ={}
-ar = ["Voltage","Current","CVolt1","CVolt2","CVolt3","CVolt4","CVolt5","CVolt6","CVolt7","CVolt8","CVolt9","CVolt10","CVolt11","CVolt12","CVolt13","CVolt14","CVolt15","CVolt16","TempPcb","TempAvg","TempMax","CapRemaining","MaxCharg","Soh","Soc","Status","Warning","Protection","ErrCode",
-"CC1","CC2","FullCap1","FullCap2","Temp12","Temp34","Temp56","CellNum","DesCap"];
+#ar = ["Voltage","Current","CVolt1","CVolt2","CVolt3","CVolt4","CVolt5","CVolt6","CVolt7","CVolt8","CVolt9","CVolt10","CVolt11","CVolt12","CVolt13","CVolt14","CVolt15","CVolt16","TempPcb","TempAvg","TempMax","CapRemaining","MaxCharg","Soh","Soc","Status","Warning","Protection","ErrCode",
+#"CycleCount","FullCap","Temp12","Temp34","Temp56","CellNum","DesCap"];
 
 slave = int(sys.argv[1])
 reg = int(sys.argv[2])
@@ -86,10 +86,11 @@ try:
 			#print round(dec.decode_32bit_float(),2)
 			#for i in range (ln):
 			#ar = result.registers[ln]
-			for i,j in enumerate(result.registers):
-				final[ar[i+reg]] = j
+			#for i,j in enumerate(result.registers):
+			#	final[ar[i+reg]] = j
 			#OrderedDict((final, True) for word in final)
-			print(json.dumps(final))
+			#print(json.dumps(final))
+			print result.registers
 		#-----------------#write value
 		#rq = client.write_coil(10001, 1, unit=0x0a)
 		#rq = client.write_register(40001, 2, unit=0x0a)
